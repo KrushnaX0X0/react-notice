@@ -1,0 +1,12 @@
+.web-title{
+  font-size: 3.5em;
+
+}
+.hedding-continer{
+    display: flex;
+    justify-content: center;
+    
+}
+.img{
+    height:60px;
+}
