@@ -2,11 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './views/Home/Home';
+import Show from './views/Show/Show';
+import Add from './views/Add/Add';
+import { BrowserRouter ,Route,Routes } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+
+
 root.render(
-   <Home/>
+   <BrowserRouter>
+   <Routes>
+       <Route path='/' element={<Home/>}/>
+       <Route path='/add' element={<Add/>}/>
+       <Route path='/show' element={<Show/>}/>
+   </Routes>
+  </BrowserRouter>
 );
 
 
