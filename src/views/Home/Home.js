@@ -31,7 +31,7 @@ function Home() {
 
       <div className='hedding-continer'>
 
-        <h1 className='text-center web-title'> <img src={note} className='img' /> Noties !</h1>
+        <h1 className='text-center web-title'> <img src={note} className='img' /> Noties <img src={pen} className='title-img'/></h1>
         <h6 className='text-center title-info'> Your friendly reminder app. {" "}
           <del>Quick notes for a busy life! </del>{" "}  <span className='hight-light'>Your friendly reminder app 📘 </span></h6>
       </div>
@@ -40,8 +40,8 @@ function Home() {
 
 
 
-        <button className='btn btn-fist'>  Add Note  <img src={pen} className='logo' /></button>
-        <button className='btn  btn-second'>  Show   <img src={book} className='logo' /></button>
+       <a href="/Add"><button className='btn btn-fist'>  Add Note  <img src={pen} className='logo' /></button></a>
+       <a href="/Show"><button className='btn  btn-second'>  Show   <img src={book} className='logo' /></button></a>
 
 
       </div>

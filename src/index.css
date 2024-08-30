@@ -10,14 +10,19 @@
   font-weight:1000;
 }
 body{
-  height: 92vh;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   background: linear-gradient(#fff,#212122);
 }
 @media screen and (max-width:500px) {
   body{
     padding: 0;
     margin: 0px;
-    height: 92vh;
+    height: 100vh;
+  }
+  .hedding-continer{
+    padding: 10px;
   }
   img.img{
     height: 58px;
@@ -34,8 +39,12 @@ body{
     flex-direction: column;
  
   }
+   button.btn.btn-fist{
+    padding: 2vh 16vw;
+  }
 
   button.btn.btn-second{
     margin-top: 30px;
+    padding: 2vh 20vw;
   }
 }
