@@ -10,25 +10,32 @@
   font-weight:1000;
 }
 body{
-  height: 100vh;
+  height: 92vh;
   background: linear-gradient(#fff,#212122);
 }
 @media screen and (max-width:500px) {
   body{
-    height: 135vh;
+    padding: 0;
+    margin: 0px;
+    height: 92vh;
   }
-  .web-title{
-    font-size: 3.5em;
+  img.img{
+    height: 58px;
   }
+  h1.text-center.web-title {
+    font-size: 3em;
+  }
+  h6.text-center.title-info{
+    padding: 5px;
+    font-size: 1em;
+  } 
   .btn-continer{
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+ 
   }
-  .btn{
-    margin: 0px;
-    padding: 0px;
-    margin-top: 5vh;
+
+  button.btn.btn-second{
+    margin-top: 30px;
   }
 }
