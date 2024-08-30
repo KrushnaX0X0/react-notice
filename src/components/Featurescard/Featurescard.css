@@ -1,0 +1,18 @@
+.features-continer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .features-logo{
+    height: 40px;
+    object-fit: contain;
+  }
+  .features-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  .card-info{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(226, 236, 236);
+  }
