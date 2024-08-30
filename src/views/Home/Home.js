@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
 import note from './noties.png'
+import pen from './quill-pen.png'
+import book from './book.png'
 
 function Home() {
   return (
@@ -9,14 +11,18 @@ function Home() {
       <div className='hedding-continer'>
 
         <h1 className='text-center web-title'> <img src={note} className='img' /> Noties !</h1>
-        <h6 className='text-center title-info'>Your pocket friendly note taking app. {" "} 
-          <del> Never forget anything anything! </del>{" "}  Remeber everything! 🧠 </h6>
+        <h6 className='text-center title-info'> Your friendly reminder app. {" "} 
+          <del>Quick notes for a busy life! </del>{" "}  <span className='hight-light'>Your friendly reminder app 📘 </span></h6>
       </div>
 
-      <div>
-        {
+      <div className='btn-continer'>
+        
+        
+        
+        <button className='btn btn-fist'>  Add Note  <img src= {pen} className='logo'/></button>
+        <button className='btn  btn-second'>  Show   <img src= {book} className='logo'/></button>
 
-        }
+
       </div>
 
     </div>
