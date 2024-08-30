@@ -1,8 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
 .text-center{
   text-align: center;
-  color: #161718;
   font-weight:1000;
 }
 body{
-  background-color: #FFF9D0;
+  height: 100vh;
+  background: linear-gradient(#fff,#212122);
 }
+  

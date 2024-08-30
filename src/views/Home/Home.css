@@ -1,13 +1,23 @@
 .web-title{
-  font-size: 5.5em;
+  font-size: 6.5vw;
+  font-weight: 1000;
+  font-family: "Archivo Black", sans-serif;   
+
 
 }
 .hedding-continer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 10px;
     
     
 }
 .img{
-    height:70px;
+  color: #fff;
+    height:78px;
+}
+.title-info{
+  font-size: 1.2em;
+  color: rgb(83, 74, 74);
 }
