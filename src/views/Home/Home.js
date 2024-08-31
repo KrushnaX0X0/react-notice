@@ -7,6 +7,7 @@ import privite from "./privacy-settings.png"
 import easy from "./correct.png"
 import like from "./heart.png"
 import Featurescard from "../../components/Featurescard/Featurescard"
+import { Link } from 'react-router-dom'
 
 const FEATURES = [
   {
@@ -40,8 +41,8 @@ function Home() {
 
 
 
-       <a href="/Add"><button className='btn btn-fist'>  Add Note  <img src={pen} className='logo' /></button></a>
-       <a href="/Show"><button className='btn  btn-second'>  Show   <img src={book} className='logo' /></button></a>
+       <Link to="/Add"><button className='btn btn-fist'>  Add Note  <img src={pen} className='logo' /></button></Link>
+       <Link to="/Show"><button className='btn  btn-second'>  Show   <img src={book} className='logo' /></button></Link>
 
 
       </div>
