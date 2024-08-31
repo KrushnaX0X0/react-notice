@@ -2,6 +2,7 @@
   font-size: 6.5em;
   font-weight: 1000;
   font-family: "Archivo Black", sans-serif;   
+  color: #1E201E;
 
 
 }
@@ -15,6 +16,7 @@
 }
 .title-img{
   height: 10vh;
+  
 }
 .img{
   color: #f1efef;
@@ -22,11 +24,11 @@
 }
 .title-info{
   font-size: 1.2em;
-  color: rgb(83, 74, 74);
+  color: #3C3D37;
 }
 .hight-light{
-  background-color: rgb(250, 255, 192);
-  color: black;
+  background-color:  #9f89b3;
+  color: #fff;
 }
 .btn-continer{
   display: flex;
@@ -43,7 +45,7 @@
   cursor: pointer;
 }
 .btn-fist{
-  background-color: rgb(128, 207, 23);
+  background-color: #C8A1E0;
  
 }
 .btn-second{
