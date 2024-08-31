@@ -13,7 +13,7 @@ body{
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(to top, #676d66,#ffffff);
+  background: linear-gradient(to top, #242222,#ffffff);
 }
 @media screen and (max-width:500px) {
   body{

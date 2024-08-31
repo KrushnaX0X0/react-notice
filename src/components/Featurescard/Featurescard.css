@@ -3,7 +3,7 @@
     justify-content: space-evenly;
   }
   .features-logo{
-    height: 40px;
+    height: 50px;
     object-fit: contain;
   }
   .features-card{
@@ -14,5 +14,5 @@
   .card-info{
     font-size: 1.2em;
     font-weight: 500;
-    color: #000;
+    color: #ffffff;
   }
