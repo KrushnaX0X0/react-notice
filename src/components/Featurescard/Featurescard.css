@@ -11,6 +11,10 @@
     flex-direction: column;
     justify-content:center;
   }
+  .features-logo:hover{
+    transition: 0.3s;
+    transform: scale(1.04);
+  }
   .card-info{
     font-size: 1.2em;
     font-weight: 500;

@@ -1,11 +1,4 @@
-.web-title{
-  font-size: 6.5em;
-  font-weight: 1000;
-  font-family: "Archivo Black", sans-serif;   
-  color: #1E201E;
 
-
-}
 .hedding-continer{
     display: flex;
     flex-direction: column;
@@ -18,10 +11,7 @@
   height: 10vh;
   
 }
-.img{
-  color: #f1efef;
-    height:78px;
-}
+
 .title-info{
   font-size: 1.2em;
   color: #3C3D37;
@@ -29,6 +19,8 @@
 .hight-light{
   background-color:  #ffffff;
   color: #000000;
+  
+
 }
 .btn-continer{
   display: flex;
@@ -44,14 +36,5 @@
   margin: 0 6vh;
   cursor: pointer;
 }
-.btn-fist{
-  background-color: #ffffff;
- 
-}
-.btn-second{
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-}
-.logo{
-  height: 25px;
-}
+
+
