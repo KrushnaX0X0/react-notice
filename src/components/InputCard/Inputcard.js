@@ -4,13 +4,40 @@ import './InputCard.css'
 import EmojiPicker from 'emoji-picker-react';
 import pen from '../../views/Home/quill-pen.png';
 import Book from '../../views/Home/book.png';
-
+import { json, Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
 function Inputcard() {
     const [title, setTitle] = useState("");
     const [description, setdescription] = useState("");
     const [category, setcategory] = useState("");
     const [emoji, setemoji] = useState("");
     const [openEmoji,setopenEmoji] = useState(false);
+
+
+  const Addnote =() => {
+    const noties = JSON.parse(localStorage.getItem("noties")) || [];
+    const noteobject = {
+        title,
+        description,
+        category,
+        emoji,
+    };
+
+      
+
+    noties.push(noteobject)
+    localStorage.setItem("noties",JSON.stringify(noties))
+    toast.success("Note Add successfully")
+    setTitle('')
+    setdescription('')
+    setcategory('')
+    setemoji('')
+      
+   
+
+  };
+
+
     return (
         <div>
         <div className='input-continer'>
@@ -31,7 +58,8 @@ function Inputcard() {
             />
 
             <select className='input-text user-select' value={category} onChange={(e) => { setcategory(e.target.value) }}>
-                <option value='shopping'>Shopping</option>
+                <option value="">Select category</option>
+               <option value='shopping'>Shopping</option>
                 <option value='work'>Work</option>
                 <option value='personal'>Personal</option>
                 <option value='lerning'>Lerning</option>
@@ -42,7 +70,8 @@ function Inputcard() {
                        </div>
           
                 <EmojiPicker open={openEmoji}
-                    height={'300px'}
+                
+                    
                     searchDisabled={true}
                     skinTonesDisabled={true}
                     onEmojiClick={(emojiObject)=>{
@@ -56,8 +85,12 @@ function Inputcard() {
             
         </div>
         <div className='btn-continer-add'>
-            <button className='btn btn-input btn-fist'> Add note <img src={pen} className='logo'/></button>
-            <button className='btn btn-input btn-second'>Show <img src={Book} className='logo'/></button>
+            <button className='btn btn-input btn-fist'
+            onClick={ Addnote}
+            > Add note
+             <img src={pen} className='logo'/>
+             </button>
+            <Link to="/Show"><button className='btn btn-input btn-second'>Show <img src={Book} className='logo'/></button></Link>
 
         </div>
 
