@@ -18,10 +18,11 @@ function Show() {
           <h1 className='text-center web-title'> <img src={book} className='img' /> Show Note </h1>\
           <div className='save-note-continer'>
           {
-            notes.map((note)=>{ 
+            notes.map((note,index)=>{ 
               const{title,description,category,emoji} = note;
               return(
              <Savenote
+             index={index}
              title={title}
              description={description}
              category={category}
