@@ -15,7 +15,8 @@ function Show() {
   },[])
   return (
     <div>
-          <h1 className='text-center web-title'> <img src={book} className='img' /> Show Note </h1>
+          <h1 className='text-center web-title'> <img src={book} className='img' /> Show Note </h1>\
+          <div className='save-note-continer'>
           {
             notes.map((note)=>{ 
               const{title,description,category,emoji} = note;
@@ -29,7 +30,7 @@ function Show() {
               )
             })
           }
-
+       </div>
 
           <Homebtn/>
     </div>
