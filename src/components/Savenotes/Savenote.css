@@ -9,6 +9,9 @@
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
     position: relative;
 }
+.note-card:hover{
+   box-shadow: 10;
+}
 .note-card-emoji{
  font-size: 2em;
  margin-right: 35px;
